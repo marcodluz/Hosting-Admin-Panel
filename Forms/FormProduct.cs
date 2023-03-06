@@ -13,7 +13,7 @@ namespace Element011.Forms
     public partial class FormProduct : Form
     {
         private readonly FormProductInfo _parent;
-        public string id, name, price, description, category;
+        public string id, name, description, price, category;
 
         public FormProduct(FormProductInfo parent)
         {
@@ -26,8 +26,8 @@ namespace Element011.Forms
             lblTitle.Text = "Update Product";
             btnSave.Text = "Update";
             txtName.Text = name;
-            txtPrice.Text = price;
             txtDescription.Text = description;
+            txtPrice.Text = price;
             txtCategory.Text = category;
         }
 

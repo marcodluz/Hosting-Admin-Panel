@@ -56,8 +56,7 @@ namespace Element011
         public static void UpdateProduct(Product pdt, string id)
         {
             string sql = "UPDATE `product` " +
-                         "SET product_name = @ProductName, price = @ProductPrice, description = @ProductDescription," +
-                         "category_id = @ProductCategoryID" +
+                         "SET `product_name` = @ProductName, `price` = @ProductPrice, `description` = @ProductDescription, `category_id` = @ProductCategoryID " +
                          "WHERE product_id = @ProductID";
 
             MySqlConnection conn = GetConnection();
