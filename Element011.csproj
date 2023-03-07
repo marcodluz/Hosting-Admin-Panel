@@ -63,17 +63,17 @@
     <Compile Include="Forms\FormProduct.Designer.cs">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormClients.cs">
+    <Compile Include="Forms\FormClientInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormClients.Designer.cs">
-      <DependentUpon>FormClients.cs</DependentUpon>
+    <Compile Include="Forms\FormClientInfo.Designer.cs">
+      <DependentUpon>FormClientInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormOrders.cs">
+    <Compile Include="Forms\FormOrderInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormOrders.Designer.cs">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <Compile Include="Forms\FormOrderInfo.Designer.cs">
+      <DependentUpon>FormOrderInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormProductInfo.cs">
       <SubType>Form</SubType>
@@ -87,11 +87,17 @@
     <Compile Include="Forms\FormReports.Designer.cs">
       <DependentUpon>FormReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormTickets.cs">
+    <Compile Include="Forms\FormRevenueInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormTickets.Designer.cs">
-      <DependentUpon>FormTickets.cs</DependentUpon>
+    <Compile Include="Forms\FormRevenueInfo.Designer.cs">
+      <DependentUpon>FormRevenueInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTicketInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTicketInfo.Designer.cs">
+      <DependentUpon>FormTicketInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
@@ -103,11 +109,11 @@
     <EmbeddedResource Include="Forms\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormClients.resx">
-      <DependentUpon>FormClients.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormClientInfo.resx">
+      <DependentUpon>FormClientInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormOrders.resx">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormOrderInfo.resx">
+      <DependentUpon>FormOrderInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProductInfo.resx">
       <DependentUpon>FormProductInfo.cs</DependentUpon>
@@ -115,8 +121,11 @@
     <EmbeddedResource Include="Forms\FormReports.resx">
       <DependentUpon>FormReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormTickets.resx">
-      <DependentUpon>FormTickets.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormRevenueInfo.resx">
+      <DependentUpon>FormRevenueInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTicketInfo.resx">
+      <DependentUpon>FormTicketInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revenue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

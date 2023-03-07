@@ -38,6 +38,7 @@ namespace Element011
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.btnRevenue = new System.Windows.Forms.Button();
             this.btnTickets = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@ namespace Element011
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnRevenue);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Controls.Add(this.btnTickets);
             this.panelMenu.Controls.Add(this.btnReports);
@@ -62,7 +64,7 @@ namespace Element011
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 585);
+            this.panelMenu.Size = new System.Drawing.Size(220, 718);
             this.panelMenu.TabIndex = 1;
             // 
             // panel1
@@ -70,7 +72,7 @@ namespace Element011
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 555);
+            this.panel1.Location = new System.Drawing.Point(0, 688);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 30);
             this.panel1.TabIndex = 6;
@@ -113,7 +115,7 @@ namespace Element011
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1013, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(1200, 80);
             this.panelTitleBar.TabIndex = 2;
             // 
             // lblTitle
@@ -122,19 +124,40 @@ namespace Element011
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(467, 29);
+            this.lblTitle.Location = new System.Drawing.Point(561, 29);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(78, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "HOME";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelDesktopPanel
             // 
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(220, 80);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(1013, 505);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(1200, 638);
             this.panelDesktopPanel.TabIndex = 3;
+            // 
+            // btnRevenue
+            // 
+            this.btnRevenue.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRevenue.FlatAppearance.BorderSize = 0;
+            this.btnRevenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRevenue.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRevenue.Image = global::Element011.Properties.Resources.revenue;
+            this.btnRevenue.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenue.Location = new System.Drawing.Point(0, 380);
+            this.btnRevenue.Name = "btnRevenue";
+            this.btnRevenue.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnRevenue.Size = new System.Drawing.Size(220, 60);
+            this.btnRevenue.TabIndex = 7;
+            this.btnRevenue.Text = "   Revenue";
+            this.btnRevenue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenue.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRevenue.UseVisualStyleBackColor = true;
+            this.btnRevenue.Click += new System.EventHandler(this.btnRevenue_Click);
             // 
             // btnTickets
             // 
@@ -240,7 +263,7 @@ namespace Element011
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 585);
+            this.ClientSize = new System.Drawing.Size(1420, 718);
             this.Controls.Add(this.panelDesktopPanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -275,6 +298,7 @@ namespace Element011
         private System.Windows.Forms.Button btnTickets;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRevenue;
     }
 }
 

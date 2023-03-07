@@ -37,14 +37,14 @@ namespace Element011.Forms
             this.panelReports.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReports.Location = new System.Drawing.Point(0, 0);
             this.panelReports.Name = "panelReports";
-            this.panelReports.Size = new System.Drawing.Size(800, 450);
+            this.panelReports.Size = new System.Drawing.Size(1184, 599);
             this.panelReports.TabIndex = 0;
             // 
             // FormReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 599);
             this.Controls.Add(this.panelReports);
             this.Name = "FormReports";
             this.Text = "Reports";

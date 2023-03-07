@@ -90,12 +90,12 @@ namespace Element011
 
         private void btnClients_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormClients(), sender);
+            OpenChildForm(new Forms.FormClientInfo(), sender);
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormOrders(), sender);
+            OpenChildForm(new Forms.FormOrderInfo(), sender);
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
@@ -110,7 +110,12 @@ namespace Element011
 
         private void btnTickets_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormTickets(), sender);
+            OpenChildForm(new Forms.FormTicketInfo(), sender);
+        }
+
+        private void btnRevenue_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormRevenueInfo(), sender);
         }
     }
 }
