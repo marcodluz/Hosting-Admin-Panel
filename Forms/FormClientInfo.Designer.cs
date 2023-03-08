@@ -63,15 +63,16 @@ namespace Element011.Forms
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(242, 18);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(191, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 16);
+            this.label1.Size = new System.Drawing.Size(678, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Displaying the top 10 clients by total spend over the past year, along with their" +
-    " contact information.";
+    " contact information";
             // 
             // panelProducts
             // 
@@ -90,14 +91,15 @@ namespace Element011.Forms
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(300, 278);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(254, 300);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(465, 16);
+            this.label2.Size = new System.Drawing.Size(540, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Displaying a list of clients who have not made any orders in the past 6 months.";
+            this.label2.Text = "Displaying a list of clients who have not made any orders in the past 6 months";
             // 
             // dataGridViewClientsOrders
             // 
@@ -134,7 +136,7 @@ namespace Element011.Forms
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewClientsOrders.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewClientsOrders.GridColor = System.Drawing.Color.White;
-            this.dataGridViewClientsOrders.Location = new System.Drawing.Point(41, 307);
+            this.dataGridViewClientsOrders.Location = new System.Drawing.Point(41, 330);
             this.dataGridViewClientsOrders.MultiSelect = false;
             this.dataGridViewClientsOrders.Name = "dataGridViewClientsOrders";
             this.dataGridViewClientsOrders.ReadOnly = true;
@@ -215,7 +217,7 @@ namespace Element011.Forms
             this.dataGridViewClientsTop.RowHeadersVisible = false;
             this.dataGridViewClientsTop.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewClientsTop.ShowEditingIcon = false;
-            this.dataGridViewClientsTop.Size = new System.Drawing.Size(981, 173);
+            this.dataGridViewClientsTop.Size = new System.Drawing.Size(981, 204);
             this.dataGridViewClientsTop.TabIndex = 0;
             // 
             // Column2

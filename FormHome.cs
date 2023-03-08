@@ -22,6 +22,9 @@ namespace Element011
         {
             InitializeComponent();
             random = new Random();
+
+            Color color = SelectThemeColor();
+            panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.5);
         }
 
         //Methods
@@ -48,11 +51,11 @@ namespace Element011
 
                     Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
+                    currentButton.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    
                 }
             }
         }
@@ -63,7 +66,7 @@ namespace Element011
             {
                 if(previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.BackColor = Color.FromArgb(14, 131, 136);
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
