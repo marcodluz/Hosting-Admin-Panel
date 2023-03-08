@@ -105,7 +105,7 @@ namespace Element011
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormReports(), sender);
+            OpenChildForm(new Forms.FormReportInfo(), sender);
         }
 
         private void btnTickets_Click(object sender, EventArgs e)
